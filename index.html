@@ -1,72 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
 <body>
-<center><h1>Student Information</h1></center>
- <table>
-    <table border="17" cellpadding="30">
-        <tr>
-            <th>Reg.No</th>
-            <th>Name</th>
-            <th>Class</th>
-            <th>Age</th>
-            <th>Phone Number</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Interino</td>
-            <td>VIII</td>
-            <td>13</td>
-            <td>9602241040</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Brock</td>
-            <td>XII</td>
-            <td>17</td>
-            <td>9602241041</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Zillenial</td>
-            <td>XII</td>
-            <td>17</td>
-            <td>9602241042</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Black</td>
-            <td>X</td>
-            <td>15</td>
-            <td>9602241043</td>
-         </tr>
-         <tr>
-            <td>5</td>
-            <td>Dcruzz</td>
-            <td>XI</td>
-            <td>16</td>
-            <td>9602241044</td>
-         </tr>
-         <tr>
-            <td>6</td>
-            <td>Stark</td>
-            <td>XI</td>
-            <td>16</td>
-            <td>9602241045</td>
-         </tr>
-         <tr>
-            <td>7</td>
-            <td>Millan</td>
-            <td>X</td>
-            <td>15</td> 
-            <td>9602241046</td>
-         </tr>
-         <tr>
-            <td>8</td>
-            <td>Siddh</td>
-            <td>XII</td>
-            <td>15</td>
-            <td>960241047</td>
-         </tr> 
-    </table>
+
+<div class="container">
+    <h2>Student Registration Form</h2>
+    <form>
+        <label>Full Name</label>
+        <input type="text" name="fullname" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Password</label>
+        <input type="password" name="password" required>
+
+        <label>Date of Birth</label>
+        <input type="date" name="dob">
+
+        <label>Gender</label>
+        <select name="gender">
+            <option value="">Select</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <label>Course</label>
+        <input type="text" name="course">
+
+        <label>Address</label>
+        <textarea name="address" rows="3"></textarea>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
 </body>
 </html>
